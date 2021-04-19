@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_person"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="#234342"
+            android:text="name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvname"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="#0c0c0d"
+            android:text="duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvduration"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="#191a1b"
+            android:text="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdate"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/call"
+            android:src="@drawable/ic_call_black_24dp"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/ivmessage1"
+            android:src="@drawable/ic_message_black_24dp"
+            />
+    </LinearLayout>
+</LinearLayout>
